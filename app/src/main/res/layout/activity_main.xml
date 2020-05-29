@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Chat Lite Bluetooth" />
+
+    <RadioGroup
+        android:id="@+id/radioMS"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+ 
+        <RadioButton
+            android:id="@+id/radioMaster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Servidor" 
+            android:checked="true" />
+ 
+        <RadioButton
+            android:id="@+id/radioSlave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cliente" />
+        
+        <ToggleButton
+            android:id="@+id/togConDescon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="conDescon"
+            android:checked="false"
+            android:textOn="Conectado"
+            android:textOff="Desconectado"  />
+ 
+    </RadioGroup>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:orientation="horizontal">
+        
+	    <EditText 
+		    android:id="@+id/msg"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:layout_height="wrap_content"
+		    android:hint="Escriba el mensaje" />
+	    
+	    <Button 
+		    android:onClick="sendMsg"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Ok" />	    
+	    
+    </LinearLayout>
+    
+    <TextView
+	    android:id="@+id/conv"        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Chat Lite Bluetooth" />    
+    
+</LinearLayout>

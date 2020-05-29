@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BluetoothBasico.iml" filepath="$PROJECT_DIR$/BluetoothBasico.iml" group="BluetoothBasico" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="BluetoothBasico/app" />
+    </modules>
+  </component>
+</project>
