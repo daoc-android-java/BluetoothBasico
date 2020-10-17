@@ -59,7 +59,7 @@ public class MainActivity extends Activity {
     	RadioButton radioSlave = (RadioButton) findViewById(R.id.radioSlave);    	
 		if(btAdapter == null) {
 			Toast.makeText(this, "ERROR: NO hay soporte de Bluetooth", Toast.LENGTH_SHORT).show();
-			resetConnection();	
+			resetConnection();
 			return;
 		}
         if (!btAdapter.isEnabled()) {
